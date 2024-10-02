@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table : html</title>
+  <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
+</head>
+<body>
+  <h1>html</h1>
+  <h2>table</h2>
+  <table 
+    border="1" 
+    style="width: 100%;"
+  >
+    <caption>
+      국영수 점수
+    </caption>
+    <!-- colgroup은 열을 제어-->
+    <colgroup>
+      <col>
+      <!-- span은 적힌 곳 기준으로 뒤쪽 나머지 열들 중복 적용 -->
+      <col span="3" width="30%">
+    </colgroup>
+    <thead>
+      <tr>
+        <!-- 아래 방향으로 내려가야 정보가 나온다는 것을 표시-접근성 -->
+        <th scope="col">이름</th>
+        <th scope="col">국어</th>
+        <th scope="col">영어</th>
+        <th scope="col">수학</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- tr은 행 -->
+      <tr>
+        <!-- th는 heading 느낌 -->
+        <th scope="row">철수</th>
+        <!-- td는 열 -->
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <th scope="row">영희</th>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">평균</th>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
