@@ -1,0 +1,109 @@
+/* 심플 선택자 */
+h1{
+  color: #557B83;
+}
+
+#logo{
+  color:#39AEA9;
+}
+
+.logo{
+  color: #A2D5AB;
+}
+
+h1#logo{
+  color: #E5EFC1;
+}
+
+#logo.logo{
+  color: #612147;
+}
+
+.logo.just{
+  color: #ECDFCC;
+}
+
+/* 자손 선택 : 공백 */
+.sel1 p{
+  background-color: #FCFAEE;
+}
+
+.sel1 > p{
+  color: #DA8359;
+}
+
+.sel1 section p{
+  background-color: #F4F6FF;
+}
+
+/* 실무(참고용) */
+.sel2.child{
+  color: #F3C623;
+}
+
+.child-g{
+  color:#EB8317;
+}
+
+/* 인접 형제 선택기 (+) */
+input:checked + label{
+  color: #10375C;
+}
+
+
+/* 상태 선택기 (:상태값) */
+.btn{
+  display: block;
+  width: 50px;
+  height: 30px;
+  background-color: #FADFA1;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  background-color: #C96868;
+  color: white;
+}
+
+#search{
+  width: 500px;
+  height: 100px;
+  font-size:16px;
+  padding: 0 0 0 30px; 
+  background-color: white;
+  border-color: rgb(175, 175, 175);
+  border-width: 3px;
+}
+
+#search:focus{
+  width: 500px;
+  height: 100px;
+  font-size:16px;
+  color:rgb(196, 196, 196);
+  padding: 0 0 0 30px; 
+  background-color: rgb(43, 43, 43);
+  border-color: rgb(185, 185, 185);
+  border-width: 3px;
+}
+
+#search:focus::placeholder{
+  color:rgb(196, 196, 196);
+}
+
+/* 가상 클래스 */
+.nav1{
+  display: flex;
+  list-style: none;
+}
+.nav1 li:first-child{
+  color: #7EACB5;
+}
+.nav1 li:last-child{
+  background-color: #FEFEA4;
+}
+
+.nav1 li:last-child span{
+  display:none;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자 | CSS</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="페이지 제목">
+  <meta property="og:description" content="페이지 설명">
+  <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg">
+  <meta property="og:url" content="http://www.mysite.com/article/article1.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="페이지 제목">
+  <meta name="twitter:description" content="페이지 설명">
+  <meta name="twitter:image" content="http://www.mysite.com/article/article1.html">
+  <meta name="twitter:domain" content="사이트 명">
+  <link rel="stylesheet" href="./CSS/01-선택자.css">
+  <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
+  <script src="./JS/script.js"></script>
+</head>
+</head>
+<body>
+  <h1>CSS</h1>
+  <h2>선택자</h2>
+  <hr>
+  <!-- 심플 선택자 -->
+  <h1 id="logo" class="logo just">logo</h1>
+  <hr>
+  <!-- 자손 선택 -->
+  <div class="sel1">
+    <p>자식</p>
+    <p>자식2</p>
+    <section>
+      <p>손자</p>
+    </section>
+  </div>
+  <hr>
+  <!-- 실무(참고용) -->
+  <div class="sel2">
+    <p class="child-g child">자식</p>
+    <p class="child-g child">자식2</p>
+    <section>
+      <p class="child-g grandchild">손자</p>
+    </section>
+  </div>
+  <hr>
+  <!-- 인접 형제 선택기 (+) -->
+  <input type="checkbox" name="term1" id="term1" checked>
+  <label for="term1">이용약관</label>
+  <br>
+  <input type="checkbox" name="term2" id="term2">
+  <label for="term2">개인정보처리방침</label>
+  <hr>
+  <!-- 상태 선택기 (:상태값) -->
+  <a href="#" class="btn">버튼  </a>
+  <br>
+  <input type="text" placeholder="글자를 입력하세요" name="search" id="search">
+  <label for="search"></label>
+  <hr>
+  <!-- 가상 클래스 -->
+  <ul class="nav1">
+    <li>메뉴1<span>|</span></li>
+    <li>메뉴2<span>|</span></li>
+    <li>메뉴3<span>|</span></li>
+    <li>메뉴4<span>|</span></li>
+  </ul>
+</body>
+</html>
