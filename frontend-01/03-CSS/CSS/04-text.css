@@ -1,0 +1,42 @@
+p{
+  color:#FEFFA7;
+  background: #000;
+  text-align: center;
+}
+
+img{
+  height: 100px;
+  vertical-align: middle;
+  margin-top:-5px;
+}
+
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: -0.4px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+button{
+  width: 100px;
+  height: 100px;
+  background-color: #FFE700;
+}
+
+.blind{
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+button::before{
+  font-family: 'Line Awesome Free';
+  font-weight: 900;
+  font-size: 50px;
+  content:"\f714";
+}

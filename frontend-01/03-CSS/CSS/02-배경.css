@@ -1,0 +1,27 @@
+.box1{
+  height:500px;
+  background-color: #10375c7c;
+  background-image: url("../imgs/background2.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* .box2{
+  height:500px;
+  background-image: url("../imgs/background3.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border-color: #00FF9C;
+  background-attachment: fixed;
+} */
+
+.box1{
+  background: #10375c7c url("../imgs/background2.jpg") no-repeat 0 0;
+}
+
+.box2{
+  height:500px;
+  background: #00FF9C url("../imgs/background3.jpg") no-repeat 0 0;
+  background-size: contain;
+}
+

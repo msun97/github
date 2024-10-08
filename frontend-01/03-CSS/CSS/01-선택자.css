@@ -107,3 +107,91 @@ input:checked + label{
 .nav1 li:last-child span{
   display:none;
 }
+
+
+/*  가상 선택자 ::before, ::after  */
+.list2::before{
+  content:"ul 앞에 내용";
+  color:#257180;
+}
+.list2::after{
+  content:"ul 뒤에 내용";
+  color:#F2E5BF;
+}
+
+.list2{
+  list-style: none;
+}
+
+.list2 li::before{
+  display: inline-block;
+  content:"";
+  width:10px;
+  height:10px;
+  background: #FD8B51;
+  margin-right: 10px;
+}
+.list2 li::after{
+  font-family: 'Line Awesome Free';
+  font-weight: 900;
+  content:"\f12a";
+}
+
+.list3{
+  list-style: none;
+}
+
+.list3 li::before{
+  font-family: 'Line Awesome Free';
+  font-weight: 900;
+  content: "\f105";
+}
+
+.list4{
+  display: flex;
+  list-style: none;
+}
+
+.list4 li::after{
+  content:"|";
+  margin:0 5px;
+}
+
+.list4 li:last-child::after{
+  display: none;
+}
+
+.label::before{
+  display: inline-block;
+  margin: 0 5px;
+  content:"";
+  border:solid;
+  border-width: 1px;
+  border-color: #CB6040;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+input:checked + .label::before{
+  display: inline-block;
+  margin: 0 5px;
+  content:"";
+  border:solid;
+  border-width: 1px;
+  border-color: #CB6040;
+  border-radius: 50%;
+  background-color: #CB6040;;
+  width: 15px;
+  height: 15px;
+}
+
+/* 속성 선택자 [] */
+a[target]{
+  background-color: #F4F6FF;
+}
+
+a[target="_blank"]{
+  color: #F3C623;
+}
+

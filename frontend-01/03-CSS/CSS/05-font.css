@@ -1,0 +1,68 @@
+/* reset */
+html, body{
+  font-size: 16px; 
+  /* chrome broswer의 default 사용값 */
+}
+/* font-family : 글꼴 */
+.text1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* font-size : 폰트 크기 */
+/* 절대 사이즈 : px */
+.text2{
+  font-size: 20px;
+}
+/* 상대 사이즈 : rem, em*/
+/* rem은 무조건 html의 폰트가 기준 */
+/* em은 부모 폰트가 기준 */
+.text3{
+  color: #F4F6FF;
+  background-color: #10375C;
+  font-size: 1.25rem;
+}
+
+
+.list1 li:nth-child(2){
+  font-size:0.875rem;
+}
+
+
+.list1 li:first-child{
+  font-size: 14px;
+}
+
+.list1 li:nth-child(2) b{
+  font-size: 1.11rem;
+}
+
+.list1 li:nth-child(3){
+  font-size:1.75rem;
+}
+
+.list1 li:last-child{
+  font-size: 2rem;
+}
+
+.list1 li:last-child b{
+  font-size: 2rem;
+}
+
+/* vw : viewport 기준 */
+.text4{
+  font-size: 2vw;
+  font-family: "Amatic SC";
+  color:#F3C623;
+}
+
+.amatic-sc-regular {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amatic-sc-bold {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
