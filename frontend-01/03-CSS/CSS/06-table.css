@@ -1,0 +1,29 @@
+#idol{
+    width: 100%;
+    height: 500px;
+    text-align: left;
+}
+
+#idol th{
+    height: 20px;
+    background-color: #FFE700;
+}
+
+#idol tr:nth-child(even){
+    background-color: #FEFFA7;
+}
+
+#idol, #idol th, #idol td{
+    border:1px solid;
+    border-collapse: collapse;
+    vertical-align: top;
+    padding: 15px;
+}
+
+#music th, #music td{
+    border-bottom: 1px solid #00FF9C;
+}
+
+#music td:hover{
+    background-color: #B6FFA1;
+}

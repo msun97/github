@@ -1,0 +1,53 @@
+html, body{
+    margin:0;
+    padding:0;
+}
+
+#nav ul{
+    list-style-type: none;
+    position: fixed;
+    top:0;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    display: flex;
+    align-items: center;
+    background-color: #7E60BF;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav li a{
+    width: 60px;
+    height:50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-decoration: none;
+}
+
+#nav li:hover {
+    text-decoration: none;
+    background-color: #433878;
+    color: white;
+}
+
+#nav .dropdown {
+    display: none;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #7E60BF;
+    z-index: 1;
+}    
+#nav li:hover .dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

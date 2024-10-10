@@ -1,0 +1,170 @@
+
+/* inline */
+.inline{
+    display: inline;
+    border:1px solid;
+}
+
+/* block */
+.block{
+    border: 1px solid;
+    width:10%;
+    height: 300px;
+    display: block;
+}
+
+/* 숨기기 */
+.hidden{
+    width:10%;
+    height: 300px;
+    visibility: hidden;
+}
+.none{
+    width:10%;
+    height: 300px;
+    display: none;
+}
+
+/* 너비 */
+.width1{
+    border: 1px solid;
+    width:500px;
+}
+.width2{
+    border: 1px solid;
+    max-width: 500px;
+}
+
+/* overflow */
+.visible{
+    width:500px;
+    height:100px;
+    border:1px solid;
+    overflow:visible;
+    margin-bottom: 150px;
+}
+.overflowHidden{
+    width:500px;
+    height:100px;
+    border:1px solid;
+    overflow:hidden;
+}
+.scroll{
+    width:500px;
+    height:100px;
+    border:1px solid;
+    overflow:scroll;
+}
+
+/* float */
+.float{
+    width:100%;
+    border: 1px solid;
+    overflow: auto;
+}
+.float img{
+    width:20%;
+    float: left;
+}
+.float2{
+    width:300px;
+    height:100px;
+    margin:auto;
+    border: 1px solid;
+    clear:left;
+    text-align: center;
+}
+.box{
+    display: flex;
+    flex-wrap:nowrap;
+    overflow: auto;
+}
+.box div{
+    float:left;
+    width:30%;
+    height:100px;
+    padding:10px;
+    text-align: center;
+}
+.box1{
+    background-color: #FFECC8;
+}
+.box2{
+    background-color: #FFD09B;
+}
+.box3{
+    background-color: #FFB0B0;
+}
+
+/* position */
+.static{
+    position: static;
+    border: 1px solid;
+}
+.relative{
+    position: relative;
+    margin: 30px;
+    border: 1px solid;
+}
+.fixed{
+    position: fixed;
+    bottom: 0;
+    right:0;
+    border: 1px solid;
+    background: #0B192C;
+    color:white;
+}
+.abs{
+    position: absolute;
+    width:200px;
+    border: 1px solid;
+    right:0;
+    background: #1E3E62;
+    color:white;
+}
+.sticky{
+    position: sticky;
+    border:1px solid;
+    top:0;
+    background: #FF6500;
+}
+
+/* z-index */
+.z{
+    display: block;
+    z-index: -1;
+    margin-left:auto;
+    margin-right:auto;
+}
+.zindex1{
+    position: absolute;
+    z-index: 1;
+    width:100%;
+    height: 300px;
+    border:1px solid;
+    background: #000000;
+    color: #fff;
+}
+.zindex2{
+    position: absolute;
+    z-index: 2;
+    margin-top: 50px;
+    width:600px;
+    height: 100px;
+    border:1px solid;
+    background: #FFF7D1;
+    color: #000;
+    right:0;
+}
+.zindex3{
+    position: absolute;
+    z-index: 3;
+    margin-top: 100px;
+    margin-left: 50px;
+    width:90%;
+    height: 300px;
+    border:1px solid;
+    background: #FFECC8;
+    color: #000;
+}
+
