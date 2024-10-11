@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Border | CSS</title>
+  <title>Translate | CSS</title>
   <meta property="og:type" content="website">
   <meta property="og:title" content="페이지 제목">
   <meta property="og:description" content="페이지 설명">
@@ -14,21 +14,50 @@
   <meta name="twitter:description" content="페이지 설명">
   <meta name="twitter:image" content="http://www.mysite.com/article/article1.html">
   <meta name="twitter:domain" content="사이트 명">
-  <link rel="stylesheet" href="./CSS/03-선.css">
+  <link rel="stylesheet" href="./CSS/11-transform.css">
   <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
   <script src="./JS/script.js"></script>
 </head>
 <body>
   <h1>CSS</h1>
-  <h2>border</h2>
-  <div class="box1">box1</div>
+  <h2>transform</h2>
+  <!-- 2D transform -->
+  <div class="translateOrigin">
+    <div class="translate"></div>
+  </div>
   <br>
-  <div class="box2">box2</div>
+  <div class="rotateOrigin">
+    <div class="rotate"></div>
+  </div>
   <br>
-  <div class="box3">box3</div>
+  <div class="scaleOrigin">
+    <div class="scale"></div>
+  </div>
   <br>
-  <div class="box4">box4</div>
+  <div class="skewOrigin">
+    <div class="skew"></div>
+  </div>
   <br>
-  <div class="box5">box5</div>
+  <!-- 3D rotate -->
+  <div class="threeOrigin">
+    <div class="threex">rotate</div>
+    <div class="threey">rotate</div>
+  </div>
+  <hr>
+  <br>
+  <!-- transition -->
+  <div class="transitionWidth"></div>
+  <div class="transitioncolor"></div>
+  <br>
+  <hr>
+  <div class="transitionTiming">
+    <div class="tlinear">linear</div>
+    <div class="tease">ease</div>
+    <div class="teasein">ease-in</div>
+    <div class="teaseout">ease-out</div>
+  <hr>
+  </div>
+  <!-- animation -->
+  <div class="ani1"></div>
 </body>
-</html>
+</html> 

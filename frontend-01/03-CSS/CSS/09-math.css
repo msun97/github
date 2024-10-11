@@ -1,0 +1,34 @@
+.math{
+  background-color: #FFE1FF;
+  display: flex;
+  width:calc(100% - 300px);
+  height: 300px;
+  border:1px solid #E4B1F0;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+}
+
+.math2{
+  background-color: #00FF9C;
+  display: flex;
+  width:max(50%, 500px);
+  height: 300px;
+  border:1px solid #B6FFA1;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  margin-top: 100px;
+}
+
+.math3{
+  background-color: #FEFFA7;
+  display: flex;
+  width:min(70%, 1200px);
+  height: 300px;
+  border:1px solid #FFE700;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  margin-top: 100px;
+}

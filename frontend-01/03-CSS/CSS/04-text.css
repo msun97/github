@@ -40,3 +40,27 @@ button::before{
   font-size: 50px;
   content:"\f714";
 }
+
+.v{
+  writing-mode: vertical-lr;
+}
+
+.box1{
+  width:300px;
+  height: 100px;
+  padding: 50px;
+  background-color: #08C2FF;
+}
+.box2{
+  width:300px;
+  height: 100px;
+  background-color: #BCF2F6;
+}
+.box3{
+  width:300px;
+  height: 100px;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #006BFF;
+  overflow: auto;
+}

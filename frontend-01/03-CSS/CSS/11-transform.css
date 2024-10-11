@@ -1,0 +1,174 @@
+.translateOrigin{
+  position: relative;
+  width:100px;
+  height:100px;
+  background-color: #FEFAE0;
+}
+.translate{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100px;
+  height:100px;
+  transform: translate(15px, 15px);
+  background-color: #F2EED7;
+}
+
+.rotateOrigin{
+  position: relative;
+  width:100px;
+  height:100px;
+  background-color: #626F47;
+}
+.rotate{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100px;
+  height:100px;
+  transform: rotate(20deg);
+  background-color: #798645;
+}
+
+.scaleOrigin{
+  position: relative;
+  width:100px;
+  height:100px;
+  background-color: #E4E0E1;
+}
+.scale{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100px;
+  height:100px;
+  transform: scale(70%);
+  background-color: #D6C0B3;
+}
+
+.skewOrigin{
+  position: relative;
+  width:100px;
+  height:100px;
+  background-color: #AB886D;
+}
+.skew{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100px;
+  height:100px;
+  transform: skew(20deg, 10deg);
+  background-color: #493628;
+}
+
+/* 3D rotate */
+.threeOrigin{
+  position: relative;
+  width:100px;
+  height:100px;
+  background-color: #243642;
+}
+.threex{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100px;
+  height:100px;
+  transform: rotateX(60deg);
+  background-color: #387478;
+}
+.threey{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100px;
+  height:100px;
+  transform: rotateY(60deg);
+  background-color: #629584;
+}
+
+/* transition */
+.transitionWidth{
+  width:100px;
+  height:100px;
+  background-color: #E2F1E7;
+  transition: width 5s 1s;
+}
+.transitionWidth:hover{
+  width:300px;
+}
+.transitioncolor{
+  width:100px;
+  height:100px;
+  background-color: #091057;
+  transition: width 5s, background-color 1s;
+}
+.transitioncolor:hover{
+  background-color: #024CAA;
+  width:300px;
+}
+
+.tlinear{
+  width:100px;
+  height:100px;
+  background-color: #091057;
+  transition: width 2s;
+  transition-timing-function: linear;
+}
+.tlinear:hover{
+  width:300px;
+}
+
+.tease{
+  width:100px;
+  height:100px;
+  background-color: #024CAA;
+  transition: width 2s;
+  transition-timing-function: ease;
+}
+.tease:hover{
+  width:300px;
+}
+
+.teasein{
+  width:100px;
+  height:100px;
+  background-color: #EC8305;
+  transition: width 2s;
+  transition-timing-function: ease-in;
+}
+.teasein:hover{
+  width:300px;
+}
+
+.teaseout{
+  width:100px;
+  height:100px;
+  background-color: #DBD3D3;
+  transition: width 2s;
+  transition-timing-function: ease-out;
+}
+.teaseout:hover{
+  width:300px;
+}
+
+@keyframes ani1{
+  0% {left:0px; top:0px; background-color: #B7E0FF;}
+  25% {left:400px; top:0px;}
+  50% {left:400px; top:400px;}
+  70% {left:0px; top:400px;}
+  100% {left:0px; top:0px; background-color: #FFF5CD;};
+}
+.ani1{
+  position: relative;
+  width:100px;
+  height:100px;
+  background-color: #B7E0FF;
+  animation-name: ani1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+

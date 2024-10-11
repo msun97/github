@@ -1,0 +1,51 @@
+:root{
+  --black: #493628;
+  --yellow: #FFF7D1;
+}
+
+.var1{
+  background-color: var(--black);
+  color: var(--yellow);
+  padding: 50px;
+}
+
+.var2{
+  --yellow: #FFD09B;
+  background-color: var(--black);
+  color: var(--yellow);
+  padding: 50px;
+}
+
+@property --myColor{
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #FFECC8;
+}
+
+.var3{
+  --myColor:#006BFF;
+  background-color: var(--myColor);
+  color: var(--yellow);
+  padding: 50px;
+}
+
+.var4inherit{
+  background-color: var(--myColor);
+}
+
+@property --myColor2{
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #FFB0B0;
+}
+
+.var4{
+  position: relative;
+ --myColor2: #FFF100;
+ background-color: var(--myColor2);
+ padding: 50px;
+}
+
+.var4inherit{
+  background-color: var(--myColor2);
+}

@@ -5,7 +5,6 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-
 /* .box2{
   height:500px;
   background-image: url("../imgs/background3.jpg");
@@ -14,14 +13,32 @@
   border-color: #00FF9C;
   background-attachment: fixed;
 } */
-
 .box1{
   background: #10375c7c url("../imgs/background2.jpg") no-repeat 0 0;
+  box-shadow: 2px 2px 5px;
 }
-
 .box2{
   height:500px;
   background: #00FF9C url("../imgs/background3.jpg") no-repeat 0 0;
   background-size: contain;
+  box-shadow: 5px 5px 5px #798645 inset;
+}
+.box3{
+  height:500px;
+  background-image: linear-gradient(to top right, #3A6D8C, #EAD8B1);
+}
+
+/* gradient */
+.box4{
+  height:500px;
+  background-image: repeating-linear-gradient(#EDE8DC, #A5B68D 10%, #C1CFA1 20%);
+}
+.box5{
+  height:500px;
+  background-image: radial-gradient(#0D92F4, #77CDFF, #F95454);
+}
+.box6{
+  height:500px;
+  background-image: conic-gradient(#0D92F4, #F95454, #C62E2E);
 }
 
