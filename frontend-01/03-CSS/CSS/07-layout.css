@@ -1,3 +1,133 @@
+/* flex */
+.flex1{
+    background-color: #B6FFA1;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flex2{
+    margin-top: 10px;
+    background-color: #FFE700;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.flex3{
+    margin-top: 10px;
+    background-color: #00FF9C;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex4{
+    margin-top: 10px;
+    background-color: #E4E0E1;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.flex5{
+    margin-top: 10px;
+    background-color: #AB886D;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.flex6{
+    margin-top: 10px;
+    background-color: #493628;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.flex7{
+    margin-top: 10px;
+    background-color: #E4E0E1;
+    width:30%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.flex{
+    width:100px;
+    height:100px;
+    background-color: #FEFFA7;
+    text-align: center;
+}   
+.flex1-2{
+    width:100px;
+    height:100px;
+    background-color: #D6C0B3;
+    text-align: center;
+}   
+.flexinher1{
+    width:100px;
+    height: 100px;
+    margin:5px;
+    order:2;
+    flex-grow: 1;
+    background-color: #AB886D;
+    text-align: center;
+}
+.flexinher2{
+    width:100px;
+    height: 100px;
+    order:3;
+    margin:5px;
+    flex-grow: 2;
+    background-color: #AB886D;
+    text-align: center;
+}
+.flexinher3{
+    width:100px;
+    height: 100px;
+    order:1;
+    margin:5px;
+    flex-grow: 6;
+    background-color: #AB886D;
+    text-align: center;
+}
+.flexinher4{
+    width:100px;
+    height: 100px;
+    margin:5px;
+    background-color: #D6C0B3;
+    text-align: center;
+}
+.flexinher5{
+    flex-basis: 200px;
+    height: 100px;
+    flex-shrink: 0;
+    margin:5px;
+    background-color: #D6C0B3;
+    text-align: center;
+}
+.flexinher6{
+    width:100px;
+    height: 50px;
+    align-self: center;
+    margin:5px;
+    background-color: #D6C0B3;
+    text-align: center;
+}
+.flexinher7{
+    width:100px;
+    height: 50px;
+    align-self: flex-end;
+    margin:5px;
+    background-color: #D6C0B3;
+    text-align: center;
+}
+
 /* column */
 .column1{
     column-count: 3;

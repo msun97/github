@@ -29,6 +29,28 @@ html, body{
   display: none;
 }
 
+.mq3{
+  display: flex;
+  height: 1000px;
+  flex-direction: column;
+}
+.img1, .img2, .img3{
+  width:250px;
+  height:500px;
+}
+.img1{
+  background: url(../imgs/img5.jpg);
+  background-size: contain;
+}
+.img2{
+  background: url(../imgs/img6.jpg);
+  background-size: contain;
+}
+.img3{
+  background: url(../imgs/img7.jpg);
+  background-size: contain;
+}
+
 @media screen and (min-width: 600px) {
   html,body{
     font-size: 1rem;
@@ -57,6 +79,28 @@ html, body{
     background-color: #3A6D8C;
     float:right;
   }
+  .mq3{
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+  }
+  .img1, .img2, .img3{
+    width:300px;
+    height:350px;
+  }
+  .img1{
+    background: url(../imgs/img5.jpg);
+    background-size: 300px auto;
+  }
+  .img2{
+    background: url(../imgs/img6.jpg);
+    background-size: 300px auto;
+  }
+  .img3{
+    background: url(../imgs/img7.jpg);
+    background-size: 300px auto;
+  }
+  
 }
 .wrap{
   margin-top:50px;
