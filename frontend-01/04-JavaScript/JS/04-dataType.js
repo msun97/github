@@ -60,3 +60,27 @@ console.log(typeof foo); //symbol
 
 foo={};
 console.log(typeof foo); //object (객체)
+
+
+// 타입변환
+
+var x=10;
+var x=x.toString();
+console.log(typeof x, x);
+
+// 문자열 변환
+String(1); // "1"
+(1).toString;
+1+'';
+
+// 숫자타입 변환
+Number('0');
+parseInt('0');
+parseFloat('0');
++'0';
+'0'*1;
+
+// 불리언 타입 변환
+Boolean('x');
+!!'x';
+

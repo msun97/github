@@ -44,10 +44,18 @@ Object.is(NaN, NaN); //true
 var result=score>=60?'pass':'fail';
 
 //논리 연산자
-true && false; //false
+false && "cat"; //false
+true && "cat"; //"cat"
+false || "cat"; // "cat"
+true || "cat"; // true
 
 //타입 연산자
 typeof 'Hi'; //string
 
 //지수 연산자 : 이항 연산자 중 우선순위가 가장 높다
 (-5)**2; // 25
+
+// 옵셔널 체이닝 연산자
+var elem=null;
+var value=elem?.vlaue;
+console.log(value); // undefined

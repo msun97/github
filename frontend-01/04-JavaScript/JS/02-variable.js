@@ -18,3 +18,9 @@ console.log(score);
 score=80;
 var score;
 console.log(score);
+
+
+// 상수
+const o = 1; //재할당 금지
+const a ={};
+a.one=1; //객체는 변경 가능

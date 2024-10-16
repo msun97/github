@@ -90,3 +90,68 @@ switch (month) {
 }
 
 console.log(monthName);
+
+
+// 반복문
+for (var i=0; i<2; i++){
+    console.log(i);
+}
+
+for (var i=1; i<=6; i++){
+    for(var j=1; j<=6; j++){
+        if (i + j === 6) console.log(`[${i}, ${j}]`);
+    }
+}
+
+var count=0;
+while (count<3){
+    console.log(count);
+    count++
+    // 무한루프 탈출
+    if (count===3) break;
+}
+
+var count=0;
+do{
+    console.log(count);
+    count++;
+} while(count<3);
+
+
+//레이블문
+foo:{
+    console.log(1);
+    break foo;
+    console.log(2);
+} 
+console.log('Done!');
+
+outer: for(var i=0; i<3; i++){
+    for(var j=0; j<3; j++){
+        // i + j === 3이면 outer라는 식별자가 붙은 레이블 for문 탈출
+        if (i+j === 3) break outer;
+        console.log(`inner [${i}, ${j}]`)
+    };
+}
+console.log('Done!');
+
+
+var words = 'Hello World!'
+var search = 'l'
+var index
+
+for (var i=0; i<words.length; i++){
+    if (words[i]===search) { //문자열은 유사 배열 겍체이므로 인덱스로 각 문자에 접근 가능
+        index=i;
+        console.log(i);
+        break;
+    }
+}
+
+var count=0;
+
+for (var i=0; i<words.length; i++){
+    if (words[i]!==search) continue;
+    count++;
+}
+console.log(count);
