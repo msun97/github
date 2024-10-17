@@ -21,6 +21,9 @@ console.log(score);
 
 
 // 상수
-const o = 1; //재할당 금지
+const o = 1; //같은 스코프 내에서 재할당 금지
 const a ={};
 a.one=1; //객체는 변경 가능
+
+
+let b = 1; // 같은 스코프 내에서 재할당 금지
