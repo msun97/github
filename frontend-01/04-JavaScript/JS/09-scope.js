@@ -17,5 +17,67 @@ function foo(){
 console.log(var1);
 console.log(var2);
 console.log(var3);
-console.log(var4); //ReferenceError
-console.log(var5); //ReferenceError
+// console.log(var4); //ReferenceError
+// console.log(var5); //ReferenceError
+
+
+function bar(){
+  console.log('This is Global function');
+}
+
+function scope(){
+  function bar(){
+    console.log('This is Local function');
+  }
+
+  bar();
+}
+
+
+// 전역 범수 억제 방법
+// 1. 즉시 실행 함수
+(function(){
+  var foo=10;
+}());
+
+// 2. 네임스페이스 객체 - 식별자 충돌 방지
+var MYAPP = {}
+MYAPP.name='Lee'
+MYAPP.person={
+  name:'kim',
+  address: 'Seoul'
+};
+
+// 3. 모듈 패턴
+var counter=(function(){
+  //private 변수
+  var num=0;
+
+  //public 데이터, 메서드
+  return{
+    increase(){
+      return ++num;
+    },
+    decrease(){
+      return --num;
+    }
+  };
+}());
+
+
+// 내부 슬롯과 내부 메서드 : [[Environment]], [[FormalParameters]] / [[Call], [[Construct]]]
+function foo(){}
+foo(); // 일반적인 함수로 호출 : [[Call]]이 호출된다
+new foo(); // 생성자 함수로 호출 : [[Construct]]가 호출된다
+
+
+// scope-safe constructor pattern
+function Circle(radius){
+  if (!(this instanceof Circle)){
+    return new Circle(radius);
+    }
+  this.radius = radius;
+  this.getDiameter = function(){
+    return 2*this.radius;
+  };
+}

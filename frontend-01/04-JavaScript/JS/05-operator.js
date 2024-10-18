@@ -59,3 +59,8 @@ typeof 'Hi'; //string
 var elem=null;
 var value=elem?.vlaue;
 console.log(value); // undefined
+
+//new 연산자 : constructor 인 함수를 생성자 함수로 동작
+//new.target : 메타 프로퍼티, 생성자 함수로 호출 된 내부의 메타 프로퍼티는 자기 자신을 가리키며, 일반 함수로 호출 된 경우 undefined를 반환
+//--> IE에선 지원x new.target을 사용할 수 없으면 스코프 세이프 생성자 패턴 사용
+

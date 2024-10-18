@@ -72,3 +72,27 @@ function add(x,y){
 function add(x=0, y=0){
   return x+y;
 }
+
+
+//property
+function square(number){
+  return number * number;
+}
+console.log(Object.getOwnPropertyDescriptors(square));
+console.dir(square); // 웹 콘솔 창에서 확인
+
+// 1. argument : 전달된 인수에 대한 정보를 담고 있음 - 가변 인자 함수 구현 시 유용
+function sum(){
+  let res=0;
+  for (let i=0; i<arguments.length; i++){  // arguments.length : 인자의 개수
+    res += arguments[i];
+  }
+  return res;
+}
+
+// 2. caller : 함수 자신을 호출한 함수
+// 3. length : 매개변수의 개수 (arguments 내부의 프로퍼티 length랑 다름)
+// 4. name : 함수 이름 (식별자랑 다름)
+// 5. prototype : constructor 만이 소유
+(function(){}).hasOwnproperty('prototype'); // hasOwnproperty : 인수로 저날받은 프로퍼티 키가 객체 고유의 프로퍼티 키인 경우 true 반환 true 
+({}).hasOwnproperty('prototype'); //false
